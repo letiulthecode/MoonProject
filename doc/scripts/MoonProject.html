@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>MoonProject Reference</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>MoonProject</h1>
+
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Functions">Functions</a></li>
+<li><a href="#Tables">Tables</a></li>
+<li><a href="#Basic_Enviorment">Basic Enviorment </a></li>
+<li><a href="#Dynamic_Enviorments">Dynamic Enviorments </a></li>
+</ul>
+
+
+<h2>Scripts</h2>
+<ul class="nowrap">
+  <li><strong>MoonProject</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Script <code>MoonProject</code></h1>
+<p>Module for creating Coding projects</p>
+<p></p>
+    <h3>Info:</h3>
+    <ul>
+        <li><strong>Release</strong>: 01/01/2021</li>
+        <li><strong>License</strong>: MIT</li>
+        <li><strong>Author</strong>: letiulthecode</li>
+    </ul>
+
+
+<h2><a href="#Functions">Functions</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#IncludeData">IncludeData (index, include)</a></td>
+	<td class="summary">Insert a custom value in data table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#IncludeDyData">IncludeDyData (index, include)</a></td>
+	<td class="summary">Insert a custom value in dynamicdata table.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Info">Info ()</a></td>
+	<td class="summary">Show information of Current version, changelog, etc</td>
+	</tr>
+</table>
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#data">data</a></td>
+	<td class="summary">The data table contains data for a basic enviorment</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#dynamicdata">dynamicdata</a></td>
+	<td class="summary">The Dynamic Data table contains data for a dynamic enviorment</td>
+	</tr>
+</table>
+<h2><a href="#Basic_Enviorment">Basic Enviorment </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#Build">Build ()</a></td>
+	<td class="summary">Just Build up the program,</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Run">Run ()</a></td>
+	<td class="summary">Run compiled file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Update">Update ()</a></td>
+	<td class="summary">Update an output file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#BuildRun">BuildRun ()</a></td>
+	<td class="summary">Build the source program and run.</td>
+	</tr>
+</table>
+<h2><a href="#Dynamic_Enviorments">Dynamic Enviorments </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#BuildDynamic">BuildDynamic ()</a></td>
+	<td class="summary">Build the program without flags and output files</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#BuildRunDynamic">BuildRunDynamic ()</a></td>
+	<td class="summary">Build and run without flags and giving output filename
+ This is used for debug like BuildRun</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Update">Update ()</a></td>
+	<td class="summary">Update an output file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Run">Run ()</a></td>
+	<td class="summary">Run compiled file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#checknil">checknil (Value)</a></td>
+	<td class="summary">Check if an value is null or is a empty string
+ For advoid the permission is denied to open the output
+ file</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Clean">Clean (File)</a></td>
+	<td class="summary">remove/Delete the file on param 'file'</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#Test">Test ()</a></td>
+	<td class="summary">Make an C file and test its out,
+ After running it will clean;</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#new">new (name, name)</a></td>
+	<td class="summary">MoonProject.new will create a new project
+ Returns nil if he dont reconigze the language.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Functions"></a>Functions</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "IncludeData"></a>
+    <strong>IncludeData (index, include)</strong>
+    </dt>
+    <dd>
+    Insert a custom value in data table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+
+        </li>
+        <li><span class="parameter">include</span>
+
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../index.html#data">data</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "IncludeDyData"></a>
+    <strong>IncludeDyData (index, include)</strong>
+    </dt>
+    <dd>
+    Insert a custom value in dynamicdata table.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">index</span>
+
+        </li>
+        <li><span class="parameter">include</span>
+
+        </li>
+    </ul>
+
+
+
+    <h3>See also:</h3>
+    <ul>
+         <a href="../index.html#dynamicdata">dynamicdata</a>
+    </ul>
+
+
+</dd>
+    <dt>
+    <a name = "Info"></a>
+    <strong>Info ()</strong>
+    </dt>
+    <dd>
+    Show information of Current version, changelog, etc
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "data"></a>
+    <strong>data</strong>
+    </dt>
+    <dd>
+    The data table contains data for a basic enviorment
+
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "dynamicdata"></a>
+    <strong>dynamicdata</strong>
+    </dt>
+    <dd>
+    The Dynamic Data table contains data for a dynamic enviorment
+
+
+
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Basic_Enviorment"></a>Basic Enviorment </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "Build"></a>
+    <strong>Build ()</strong>
+    </dt>
+    <dd>
+    Just Build up the program,
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Compiled File
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Run"></a>
+    <strong>Run ()</strong>
+    </dt>
+    <dd>
+    Run compiled file
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Compiled File Result
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Update"></a>
+    <strong>Update ()</strong>
+    </dt>
+    <dd>
+    Update an output file
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Updated file
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "BuildRun"></a>
+    <strong>BuildRun ()</strong>
+    </dt>
+    <dd>
+    Build the source program and run.
+ This is used for debugging
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Compiled Code Result
+    </ol>
+
+
+
+
+</dd>
+</dl>
+    <h2 class="section-header "><a name="Dynamic_Enviorments"></a>Dynamic Enviorments </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "BuildDynamic"></a>
+    <strong>BuildDynamic ()</strong>
+    </dt>
+    <dd>
+    Build the program without flags and output files
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Compiled File
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "BuildRunDynamic"></a>
+    <strong>BuildRunDynamic ()</strong>
+    </dt>
+    <dd>
+    Build and run without flags and giving output filename
+ This is used for debug like BuildRun
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Compiled Code Result
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Update"></a>
+    <strong>Update ()</strong>
+    </dt>
+    <dd>
+    Update an output file
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Updated file
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Run"></a>
+    <strong>Run ()</strong>
+    </dt>
+    <dd>
+    Run compiled file
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Compiled File Result
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "checknil"></a>
+    <strong>checknil (Value)</strong>
+    </dt>
+    <dd>
+    Check if an value is null or is a empty string
+ For advoid the permission is denied to open the output
+ file
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">Value</span>
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Clean"></a>
+    <strong>Clean (File)</strong>
+    </dt>
+    <dd>
+    remove/Delete the file on param 'file'
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">File</span>
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        FIle Deleted
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "Test"></a>
+    <strong>Test ()</strong>
+    </dt>
+    <dd>
+    Make an C file and test its out,
+ After running it will clean;
+
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+        "Hello World!"
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "new"></a>
+    <strong>new (name, name)</strong>
+    </dt>
+    <dd>
+    MoonProject.new will create a new project
+ Returns nil if he dont reconigze the language.
+
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+         of the language
+        </li>
+        <li><span class="parameter">name</span>
+         of the language
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+        Project
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+</div> <!-- id="container" -->
+<h3>My code is really bad.</h3>
+</body>
+</html>
